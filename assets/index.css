@@ -8,12 +8,14 @@
     --secondary-color:#10101F;
     --tertiary-color:white;
     --quad-color:rgb(107 114 128);
+    --fifth-color:rgb(39,13,72);
 }
 .theme{
     --primary-color:black;
     --secondary-color:white;
     --tertiary-color:blue;
     --quad-color:black;
+    --fifth-color:rgb(255, 0, 0);
 }
 @font-face {
     font-family: Barlow;
@@ -314,10 +316,11 @@ html {
     font-family: Inter,ui-sans-serif,system-ui,-apple-system,BlinkMacSystemFont,Segoe UI,Roboto,Helvetica Neue,Arial,Noto Sans,sans-serif,"Apple Color Emoji","Segoe UI Emoji",Segoe UI Symbol,"Noto Color Emoji";
     font-feature-settings: normal;
     font-variation-settings: normal;
+    
 }
 
 body {
-
+    overflow-x: hidden;
     margin: 0;
     line-height: inherit;
     color: var(--primary-color);
@@ -327,7 +330,7 @@ body {
 hr {
     height: 0;
     color: inherit;
-    border-top-width: 1px
+    border-top-width: 1px;
 }
 
 abbr:where([title]) {
@@ -1244,7 +1247,7 @@ th {
 }
 
 .gradient-bright {
-    background-image: linear-gradient(to right,var(--tw-gradient-stops));
+    background-image: linear-gradient(to right,var(--tw-gradient-stops)) ;
     --tw-gradient-from: #9d00ff var(--tw-gradient-from-position);
     --tw-gradient-to: rgb(157 0 255 / 0) var(--tw-gradient-to-position);
     --tw-gradient-stops: var(--tw-gradient-from), var(--tw-gradient-to);
@@ -1272,11 +1275,11 @@ th {
 .gradient-selection {
     border: 1px solid transparent!important;
     margin: -1px;
-    background: linear-gradient(#f5e5ff,#eee9ff) padding-box,linear-gradient(99.14deg,#9d00ff 8.57%,#592afb 93.67%) border-box
+    background: linear-gradient(#f5e5ff,#eee9ff) padding-box,linear-gradient(99.14deg,#9d00ff 8.57%,#592afb 93.67%) border-box !important;
 }
 
 .dark .gradient-selection {
-    background: linear-gradient(#241740,#1e1940) padding-box,linear-gradient(99.14deg,#9d00ff 8.57%,#592afb 93.67%) border-box
+    background: linear-gradient(#241740,#1e1940) padding-box,linear-gradient(99.14deg,#9d00ff 8.57%,#592afb 93.67%) border-box !important;
 }
 
 @keyframes shine-move {
@@ -1304,7 +1307,7 @@ th {
 }
 
 .graph-gradient {
-    background: linear-gradient(99.14deg,#8c00ff 8.57%,#450ffe 93.67%),#ca6eff
+    background: linear-gradient(99.14deg,#8c00ff 8.57%,#450ffe 93.67%),#ca6eff 
 }
 
 .bar-gradient-1 {
@@ -3111,7 +3114,7 @@ th {
 }
 
 .from-\[\#8C00FF\] {
-    --tw-gradient-from: #8C00FF var(--tw-gradient-from-position);
+    --tw-gradient-from: #8C00FF var(--tw-gradient-from-position) ;
     --tw-gradient-to: rgb(140 0 255 / 0) var(--tw-gradient-to-position);
     --tw-gradient-stops: var(--tw-gradient-from), var(--tw-gradient-to);
 }
@@ -4846,4 +4849,53 @@ th {
 }
 .text3{
     background-color: var(--secondary-color);
+    z-index: 40;
 }
+
+
+.gradient{
+    position: absolute;
+    bottom: 100px;
+    left: -250px;
+    height: 600px;
+    width: 600px;
+    background: rgb(39,13,72);
+background: radial-gradient(circle, rgba(39,13,72,1) 0%, rgba(38,13,71,1) 32%, rgba(18,16,34,0) 56%);
+    z-index: 0;
+}
+
+.gradient2{
+    position: absolute;
+    bottom: -40px;
+    right: -100px;
+    height: 500px;
+    width: 500px;
+    background: rgb(39,13,72);
+background: radial-gradient(circle, rgba(39,13,72,1) 0%, rgba(38,13,71,1) 32%, rgba(18,16,34,0) 56%);
+    z-index: 0;
+}
+.img10{
+    z-index: 40;
+
+}
+.gradient3{
+    position: absolute;
+    bottom: -50px;
+    left: -100px;
+    height: 500px;
+    width: 500px;
+    background: rgb(39,13,72);
+background: radial-gradient(circle, rgba(39,13,72,1) 0%, rgba(38,13,71,1) 32%, rgba(18,16,34,0) 56%);
+    z-index: 0;
+}
+.gradient4{
+    position: absolute;
+    top: -50px;
+    right: -150px;
+    height: 600px;
+    width: 600px;
+    background: rgb(39,13,72);
+    background: radial-gradient(circle, rgba(39,13,72,1) 0%, rgba(38,13,71,1) 32%, rgba(18,16,34,0) 56%);
+    z-index: 0;
+}
+
